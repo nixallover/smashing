@@ -5,14 +5,17 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { IngredientListComponent } from './ingredients/ingredient-list/ingredient-list.component';
+
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
+  ],
+  declarations: [
+    AppComponent,
+    IngredientListComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

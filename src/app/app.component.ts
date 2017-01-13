@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 
-import { INGREDIENTS } from './data/ingredients';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,5 +7,4 @@ import { INGREDIENTS } from './data/ingredients';
 })
 export class AppComponent {
   public title = 'Smush!';
-  private ingredients: any[] = INGREDIENTS;
  }
