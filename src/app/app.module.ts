@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 
 import { IngredientListComponent } from './ingredients/ingredient-list/ingredient-list.component';
+import { BlenderComponent } from './blender/blender.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { IngredientListComponent } from './ingredients/ingredient-list/ingredien
   ],
   declarations: [
     AppComponent,
+    BlenderComponent,
     IngredientListComponent
   ],
   providers: [],
