@@ -7,11 +7,14 @@ export class BlenderService {
 
   constructor() { }
 
-  public activeDrink: Drink = new Drink(1, 'new drink');
+  public shared: any = {
+    activeDrink: new Drink(1, 'new drink')
+  };
+  // public activeDrink: Drink = new Drink(1, 'new drink');
 
   public addIngredient(ingredient: any): void {
-    console.info('adding ingredient', ingredient);
-    this.activeDrink.ingredients.push[ingredient];
+    console.info('adding ingredient', ingredient, this.shared.activeDrink.ingredients);
+    this.shared.activeDrink.ingredients.push(ingredient);
   }
 
 }

@@ -1,6 +1,12 @@
 <div class="card card-block">
   <h2>Blender</h2>
 
+  <!--{{shared.activeDrink | json}}-->
+
+  <ul *ngFor="let activeIngredient of shared.activeDrink.ingredients">
+    <li>{{activeIngredient.name}}</li>
+  </ul>
+
   <div *ngIf="isBlended" class="alert alert-success">
     Blended!
   </div>

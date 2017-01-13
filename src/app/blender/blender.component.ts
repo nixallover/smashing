@@ -10,8 +10,11 @@ import { BlenderService } from '../blender.service';
 })
 export class BlenderComponent implements OnInit {
   private isBlended: boolean;
+  private shared: any;
 
-  constructor(private blenderSvc: BlenderService) { }
+  constructor(private blenderSvc: BlenderService) {
+    this.shared = blenderSvc.shared;
+   }
 
   public ngOnInit() {
     this.isBlended = false;
