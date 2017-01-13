@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Ingredient } from '../../ingredients/ingredient.type';
+import { Category } from '../../ingredients/category.type';
+
+import { CATEGORIES } from '../../data/categories';
 import { INGREDIENTS } from '../../data/ingredients';
 
 @Component({
@@ -7,7 +11,8 @@ import { INGREDIENTS } from '../../data/ingredients';
   templateUrl: './ingredient-list.component.html'
 })
 export class IngredientListComponent implements OnInit {
-  private ingredients: any[] = INGREDIENTS;
+  private categories: Category[] = CATEGORIES;
+  private ingredients: Ingredient[] = INGREDIENTS;
 
   constructor() { }
 
