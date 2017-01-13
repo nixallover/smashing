@@ -1,11 +1,11 @@
 <div class="card card-block">
   <h2>Ingredients</h2>
   <div *ngFor="let category of categories">
-    <h3>{{category.title}}</h3>
-    <ul>
-      <li *ngFor="let ingredient of ingredients">
+    <h3 class="ingredient-category-header">{{category.title}}</h3>
+    <div class="list-group">
+      <a *ngFor="let ingredient of ingredients" class="list-group-item list-group-item-action">
         {{ingredient.name}}
-      </li>
-    </ul>
+      </a>
+    </div>
   </div>
 </div>
