@@ -1,17 +1,19 @@
-export var INGREDIENTS: any[] = [
+import { Ingredient } from '../ingredients/ingredient.type';
+
+export var INGREDIENTS: Ingredient[] = [
     {
         id: 1,
         name: 'Apple',
-        category: 'fruit'
+        categoryId: 'fruit'
     },
     {
         id: 2,
         name: 'Banana',
-        category: 'fruit'
+        categoryId: 'fruit'
     },
     {
         id: 3,
         name: 'Yogurt',
-        category: 'dairy'
+        categoryId: 'dairy'
     }
 ];
