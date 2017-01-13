@@ -1,0 +1,12 @@
+<div class="card card-block">
+  <h2>Blender</h2>
+
+  <div *ngIf="isBlended" class="alert alert-success">
+    Blended!
+  </div>
+
+  <button class="btn btn-lg btn-success"
+    (click)="blend()">
+    Blend!
+  </button>
+</div>
