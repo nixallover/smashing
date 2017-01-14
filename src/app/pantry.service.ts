@@ -14,9 +14,12 @@ export class PantryService {
   private categories: Category[] = CATEGORIES;
   private ingredients: Ingredient[] = INGREDIENTS;
 
-  public pantry: any = [];
+  public pantry: any[] = [];
+  public pantryData: any = {
+    pantry: undefined
+  };
 
-  public buildPantry(): any[] {
+  public buildPantry(): void {
     let pantry: any[];
     let currCategory: any;
 
@@ -34,9 +37,9 @@ export class PantryService {
       currCategory.ingredients.push(ing);
     });
 
-    console.log('my completed pantry', pantry);
+    this.pantryData.pantry = pantry;
 
-    return pantry;
+    console.log('my completed pantry', this.pantry);
   }
 
 }

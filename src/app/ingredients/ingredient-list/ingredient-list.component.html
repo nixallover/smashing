@@ -1,13 +1,14 @@
-<!--<div class="card card-block">
+<div class="card card-block">
   <h2>Ingredients</h2>
-  <div *ngFor="let category of categories">
+  {{pantry | json}}
+  <div *ngFor="let category of pantryData.pantry">
     <h3 class="ingredient-category-header">{{category.title}}</h3>
     <div class="list-group">
-      <a *ngFor="let ingredient of ingredients" 
+      <a *ngFor="let ingredient of category.ingredients" 
         (click)="addIngredient(ingredient)"
         class="list-group-item list-group-item-action">
         {{ingredient.name}}
       </a>
     </div>
   </div>
-</div>-->
+</div>

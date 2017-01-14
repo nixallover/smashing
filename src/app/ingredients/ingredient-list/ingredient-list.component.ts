@@ -4,9 +4,6 @@ import { Ingredient } from '../../ingredients/ingredient.type';
 import { Category } from '../../ingredients/category.type';
 import { Drink } from '../../drink.type';
 
-// import { CATEGORIES } from '../../data/categories';
-// import { INGREDIENTS } from '../../data/ingredients';
-
 import { PantryService } from '../../pantry.service';
 import { BlenderService } from '../../blender.service';
 
@@ -16,16 +13,14 @@ import { BlenderService } from '../../blender.service';
   providers: [PantryService]
 })
 export class IngredientListComponent implements OnInit {
-  // private categories: Category[] = CATEGORIES;
-  // private ingredients: Ingredient[] = INGREDIENTS;
-  private pantry: any;
+  private pantryData: any;
   private shared: any;
 
   constructor(
     private pantrySvc: PantryService,
     private blenderSvc: BlenderService
   ) {
-    this.pantry = pantrySvc.pantry;
+    this.pantryData = pantrySvc.pantryData;
     this.shared = blenderSvc.shared;
    }
 
