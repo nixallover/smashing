@@ -7,8 +7,8 @@ export var CATEGORIES: Category[] = [
         ingredients: []
     },
     {
-        id: 'vegetable',
-        title: 'Vegetables',
+        id: 'green',
+        title: 'Greens',
         ingredients: []
     },
     {
