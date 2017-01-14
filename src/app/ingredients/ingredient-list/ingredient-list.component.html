@@ -3,12 +3,19 @@
   {{pantry | json}}
   <div *ngFor="let category of pantryData.pantry">
     <h3 class="ingredient-category-header">{{category.title}}</h3>
-    <div class="list-group">
+
+    <!--<div class="list-group">
       <a *ngFor="let ingredient of category.ingredients" 
         (click)="addIngredient(ingredient)"
         class="list-group-item list-group-item-action">
         {{ingredient.name}}
       </a>
+    </div>-->
+
+    <div *ngFor="let ingredient of category.ingredients" 
+      (click)="addIngredient(ingredient)"
+      class="card card-block card-inverse text-center">
+      {{ingredient.name}}
     </div>
   </div>
 </div>

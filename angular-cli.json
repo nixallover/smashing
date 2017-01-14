@@ -19,7 +19,7 @@
       "mobile": false,
       "styles": [
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
-        "styles.css"
+        "smush.css"
       ],
       "scripts": [
         "../node_modules/lodash/lodash.min.js"
