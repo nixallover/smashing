@@ -30,6 +30,7 @@ export class IngredientListComponent implements OnInit {
    }
 
   public ngOnInit() {
+    this.pantrySvc.buildPantry();
   }
 
   private addIngredient(ingredient: Ingredient): void {

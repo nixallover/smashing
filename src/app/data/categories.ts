@@ -3,22 +3,27 @@ import { Category } from '../ingredients/category.type';
 export var CATEGORIES: Category[] = [
     {
         id: 'fruit',
-        title: 'Fruits'
+        title: 'Fruits',
+        ingredients: []
     },
     {
         id: 'vegetable',
-        title: 'Vegetables'
+        title: 'Vegetables',
+        ingredients: []
     },
     {
         id: 'nut',
-        title: 'Nuts'
+        title: 'Nuts',
+        ingredients: []
     },
     {
         id: 'dairy',
-        title: 'Dairy'
+        title: 'Dairy',
+        ingredients: []
     },
     {
         id: 'seed',
-        title: 'Seed'
+        title: 'Seed',
+        ingredients: []
     }
 ];
