@@ -1,21 +1,35 @@
-<div class="container">
-  <div class="header clearfix">
-    <!-- <h1 class="text-muted">{{title}}</h1> -->
-    <img id="app-title" src="/assets/app-title.png" />
-  </div>
-
-  <div class="row">
-    <div class="col-md-5">
-      <app-ingredient-list></app-ingredient-list>
+<div class="main-container">
+    <div class="ingredients-container">
+        <app-ingredient-list></app-ingredient-list>
     </div>
-    <div class="col-md-7">
-      <app-blender></app-blender>
-    </div>
-  </div>
+    <div class="blender-container">
+        <div class="header clearfix">
+            <img id="app-title" src="/assets/app-title.png" />
+        </div>
 
-  <hr />
-  <footer class="footer">
-    <p>&copy; 2017 Nicole Oliver</p>
-  </footer>
+        <app-blender></app-blender>
+
+        <footer class="footer">
+            <p>&copy; 2017 <a href="https://github.com/nixallover" title="GitHub profile">Nicole Oliver</a></p>
+        </footer>
+    </div>
+
+    <!-- <div class="header clearfix">
+        <img id="app-title" src="/assets/app-title.png" />
+    </div>
+
+    <div class="row">
+        <div class="col-md-5">
+            <app-ingredient-list></app-ingredient-list>
+        </div>
+        <div class="col-md-7">
+            <app-blender></app-blender>
+        </div>
+    </div>
+
+    <hr />
+    <footer class="footer">
+        <p>&copy; 2017 <a href="https://github.com/nixallover" title="GitHub profile">Nicole Oliver</a></p>
+    </footer> -->
 
 </div> <!-- /container -->

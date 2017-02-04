@@ -1,12 +1,31 @@
 $color-white: #FFF;
-$color-base: #8BD1CE;
+$color-neutral: #DBCFC3;
+$color-base: #8DE2DC;
 $color-primary: #35B2AF;
 $color-secondary: #FFAF99;
-$color-secondary: #B25842;
+$color-teriary: #B25842;
 
 body {
-    background-color: $color-base;
+background-color: $color-base;
 }
+
+.main-container {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    // max-width: 1500px;
+    margin: 0 auto;
+}
+.ingredients-container {
+    background-color: $color-neutral;
+    width: 45%;
+}
+.blender-container {
+    // background-color: $color-teriary;
+    width: 55%;
+}
+
+
 
 #app-title {
     display: block;
@@ -20,9 +39,26 @@ body {
     background-color: transparent;
 }
 
+/*** ingredients ***/
+
 h3.ingredient-category-header {
     font-size: 110%;
     text-transform: uppercase;
     letter-spacing: .3em;
     margin-top: 20px;
+}
+
+.ingredient-card {
+    background: $color-white url("assets/strawberry.png") no-repeat center center;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    margin: 0px 2% 2% 0;
+    min-height: 200px;
+    width: 48%;
+    vertical-align: top;
+
+    .ingredient-name {
+
+    }
 }

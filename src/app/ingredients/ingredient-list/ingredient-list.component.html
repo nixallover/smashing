@@ -14,8 +14,10 @@
 
     <div *ngFor="let ingredient of category.ingredients" 
       (click)="addIngredient(ingredient)"
-      class="card card-block card-inverse text-center">
-      {{ingredient.name}}
+      class="card card-block ingredient-card">
+      <div class="ingredient-name">
+        {{ingredient.name}}
+      </div>
     </div>
   </div>
 </div>
