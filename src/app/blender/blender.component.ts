@@ -5,7 +5,7 @@ import { BlenderService } from '../blender.service';
 @Component({
   selector: 'app-blender',
   templateUrl: './blender.component.html',
-  styleUrls: ['./blender.component.css'],
+  styleUrls: ['./blender.component.scss'],
   providers: []
 })
 export class BlenderComponent implements OnInit {

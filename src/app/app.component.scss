@@ -9,13 +9,13 @@
 .ingredients-container {
   background-color: $color-neutral;
   width: 45%;
-  padding: 1em;
+  padding: 2em;
   // height: 600px;
   // overflow-x: scroll;
 }
 .blender-container {
   width: 55%;
-  padding: 1em;
+  padding: 2em;
 }
 
 // app title img
@@ -25,4 +25,11 @@
   margin: 1em 0 0 1em;
   max-width: 300px;
   position: relative;
+}
+
+footer {
+	color: $color-dark;
+	margin-top: 1em;
+	border-top: dotted 2px $color-white;
+	padding-top: 1em;
 }
