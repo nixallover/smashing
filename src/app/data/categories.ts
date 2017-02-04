@@ -23,7 +23,7 @@ export var CATEGORIES: Category[] = [
     },
     {
         id: 'seed',
-        title: 'Seed',
+        title: 'Seeds',
         ingredients: []
     }
 ];
