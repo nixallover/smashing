@@ -19,7 +19,7 @@
       "mobile": false,
       "styles": [
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
-        "smush.css"
+        "common.css"
       ],
       "scripts": [
         "../node_modules/lodash/lodash.min.js"
@@ -44,7 +44,7 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
+    "styleExt": "scss",
     "prefixInterfaces": false,
     "inline": {
       "style": false,

@@ -10,6 +10,7 @@ import { BlenderService } from '../../blender.service';
 @Component({
   selector: 'app-ingredient-list',
   templateUrl: './ingredient-list.component.html',
+  styleUrls: ['./ingredient-list.component.scss'],
   providers: [PantryService]
 })
 export class IngredientListComponent implements OnInit {

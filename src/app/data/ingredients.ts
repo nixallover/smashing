@@ -2,77 +2,77 @@ import { Ingredient } from '../ingredients/ingredient.type';
 
 export var INGREDIENTS: Ingredient[] = [
     {
-        id: 1,
+        id: 'apple',
         name: 'Apple',
         categoryId: 'fruit'
     },
     {
-        id: 2,
+        id: 'banana',
         name: 'Banana',
         categoryId: 'fruit'
     },
     {
-        id: 3,
+        id: 'yogurt',
         name: 'Yogurt',
         categoryId: 'dairy'
     },
     {
-        id: 4,
+        id: 'strawberry',
         name: 'Strawberry',
         categoryId: 'fruit'
     },
     {
-        id: 5,
+        id: 'blueberry',
         name: 'Blueberry',
         categoryId: 'fruit'
     },
     {
-        id: 6,
+        id: 'raspberry',
         name: 'Raspberry',
         categoryId: 'fruit'
     },
     {
-        id: 7,
+        id: 'blackberry',
         name: 'Blackberry',
         categoryId: 'fruit'
     },
     {
-        id: 8,
+        id: 'peach',
         name: 'Peach',
         categoryId: 'fruit'
     },
     {
-        id: 9,
+        id: 'almond',
         name: 'Almond',
         categoryId: 'nut'
     },
     {
-        id: 10,
+        id: 'hazelnut',
         name: 'Hazelnut',
         categoryId: 'nut'
     },
     {
-        id: 11,
+        id: 'spinach',
         name: 'Spinach',
         categoryId: 'green'
     },
     {
-        id: 12,
+        id: 'kale',
         name: 'Kale',
         categoryId: 'green'
     },
     {
-        id: 13,
+        id: 'chia-seed',
         name: 'Chai seed',
         categoryId: 'seed'
     },
     {
-        id: 14,
+        id: 'pumpkin-seed',
         name: 'Pumpkin seed',
         categoryId: 'seed'
     },
     {
-        id: 15,
+        id: 'whey-protein',
         name: 'Whey protein',
         categoryId: 'dairy'
     }
