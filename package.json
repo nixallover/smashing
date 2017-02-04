@@ -10,7 +10,8 @@
     "test": "ng test",
     "pree2e": "webdriver-manager update --standalone false --gecko false",
     "e2e": "protractor",
-    "sass": "node-sass --output-style compressed -o src src/sass"
+    "build-sass": "node-sass --output-style compressed -o src src/sass",
+    "watch-sass": "nodemon -e scss -x \"npm run build-sass\""
   },
   "private": true,
   "dependencies": {
@@ -43,6 +44,7 @@
     "karma-jasmine": "^1.0.2",
     "karma-remap-istanbul": "^0.2.1",
     "node-sass": "^4.3.0",
+    "nodemon": "^1.11.0",
     "protractor": "~5.0.0",
     "ts-node": "2.0.0",
     "tslint": "^4.0.2",
