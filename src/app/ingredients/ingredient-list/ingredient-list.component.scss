@@ -15,6 +15,7 @@ h3.ingredient-category-header {
     display: inline-block;
     margin: 0px 0px 2% 2%;
     min-height: 200px;
+    opacity: .9;
     width: 48%;
     vertical-align: top;
 
@@ -24,5 +25,13 @@ h3.ingredient-category-header {
         bottom: 1em;
         left: 1.5em;
         font-size: 135%;
+    }
+
+    &:hover {
+        opacity: 1;
+
+        .ingredient-name {
+            font-weight: bold;
+        }
     }
 }
