@@ -1,6 +1,5 @@
-# Smush!
-
-A little app that helps you generate a perfect blended beverage.
+# Smashing
+## A little app that helps you generate a perfect blended beverage.
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
 
