@@ -1,5 +1,6 @@
 
 <h2>Choose your ingredients</h2>
+<p>What's going into your drink?</p>
 {{pantry | json}}
 <div *ngFor="let category of pantryData.pantry">
   <h3 class="ingredient-category-header">{{category.title}}</h3>
