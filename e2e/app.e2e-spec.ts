@@ -1,10 +1,10 @@
-import { SmushPage } from './app.po';
+import { SmashingPage } from './app.po';
 
-describe('smush App', function() {
-  let page: SmushPage;
+describe('Smashing App', function() {
+  let page: SmashingPage;
 
   beforeEach(() => {
-    page = new SmushPage();
+    page = new SmashingPage();
   });
 
   it('should display message saying app works', () => {

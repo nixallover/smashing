@@ -1,12 +1,21 @@
-<div class="card card-block">
-  <h2>Blender</h2>
+<h2>Blender</h2>
 
-  <div *ngIf="isBlended" class="alert alert-success">
-    Blended!
+<!--{{shared.activeDrink | json}}-->
+
+<div class="blender card card-block">
+  <div *ngIf="shared.activeDrink.ingredients.length < 1" class="missing-content">
+    You haven't chosen any ingredients yet
   </div>
-
-  <button class="btn btn-lg btn-success"
-    (click)="blend()">
-    Blend!
-  </button>
+  <ul *ngFor="let activeIngredient of shared.activeDrink.ingredients">
+    <li>{{activeIngredient.name}}</li>
+  </ul>
 </div>
+
+<div *ngIf="isBlended" class="alert alert-success">
+  Blended!
+</div>
+
+<button class="btn btn-lg btn-block btn-blend"
+  (click)="blend()">
+  Blend!
+</button>

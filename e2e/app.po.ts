@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class SmushPage {
+export class SmashingPage {
   navigateTo() {
     return browser.get('/');
   }

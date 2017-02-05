@@ -1,0 +1,25 @@
+@import '_colors';
+
+body {
+    background-color: $color-base;
+    color: $color-dark;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2 {
+    color: $color-secondary;
+}
+h3, h4, h5, h6 {
+    color: darken($color-secondary, 10);
+}
+
+.card {
+    background-color: transparent;
+}
+
+.missing-content {
+    color: #109e6e;
+    margin: 4em;
+    text-align: center;
+    font-size: 140%;
+}

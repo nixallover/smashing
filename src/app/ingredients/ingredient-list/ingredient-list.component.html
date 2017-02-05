@@ -1,11 +1,15 @@
-<div class="card card-block">
-  <h2>Ingredients</h2>
-  <div *ngFor="let category of categories">
-    <h3>{{category.title}}</h3>
-    <ul>
-      <li *ngFor="let ingredient of ingredients">
-        {{ingredient.name}}
-      </li>
-    </ul>
+
+<h2>Choose your ingredients</h2>
+<p>What's going into your drink?</p>
+{{pantry | json}}
+<div *ngFor="let category of pantryData.pantry">
+  <h3 class="ingredient-category-header">{{category.title}}</h3>
+
+  <div *ngFor="let ingredient of category.ingredients" 
+    (click)="addIngredient(ingredient)"
+    class="card card-block ingredient-card">
+    <div class="ingredient-name">
+      {{ingredient.name}}
+    </div>
   </div>
 </div>

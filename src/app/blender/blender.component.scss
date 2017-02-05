@@ -1,0 +1,22 @@
+@import '../../sass/_colors';
+
+.blender {
+  background-color: lighten($color-base, 10);
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 1em;
+  min-height: 200px;
+}
+
+.btn-blend {
+  width: 100%;
+  border-radius: 35px;
+  min-height: 70px;
+  color: $color-white;
+  font-size: 150%;
+  background-color: $color-secondary;
+
+  &:hover {
+    background-color: darken($color-secondary, 10);
+  }
+}
