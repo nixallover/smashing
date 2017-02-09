@@ -19,19 +19,41 @@ h3.ingredient-category-header {
     width: 48%;
     vertical-align: top;
 
-    .ingredient-name {
+    .ingredient-description {
         display: block;
         position: absolute;
         bottom: 1em;
-        left: 1.5em;
+        left: 1em;
+        right: 1em;
         font-size: 135%;
+        transform: translateY(120px);
+        transition: transform .3s;
+
+        ul.ingredient-features {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            transform: scale(0, 1);
+
+            li {
+                background-color: $color-secondary;
+                color: $color-white;
+                margin: 5px;
+                padding: 0px 10px;
+            }
+        }
+
     }
 
     &:hover {
         opacity: 1;
 
-        .ingredient-name {
-            font-weight: bold;
+        .ingredient-description {
+            transform: translateY(0px);
+
+            ul.ingredient-features {
+                transform: scale(1, 1);
+            }
         }
     }
 }
