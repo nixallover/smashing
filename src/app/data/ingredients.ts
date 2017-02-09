@@ -4,76 +4,91 @@ export var INGREDIENTS: Ingredient[] = [
     {
         id: 'apple',
         name: 'Apple',
-        categoryId: 'fruit'
+        categoryId: 'fruit',
+        features: ['a', 'b', 'c']
     },
     {
         id: 'banana',
         name: 'Banana',
-        categoryId: 'fruit'
+        categoryId: 'fruit',
+        features: ['a', 'b', 'c']
     },
     {
         id: 'yogurt',
         name: 'Yogurt',
-        categoryId: 'dairy'
+        categoryId: 'dairy',
+        features: ['a', 'b', 'c']
     },
     {
         id: 'strawberry',
         name: 'Strawberry',
-        categoryId: 'fruit'
+        categoryId: 'fruit',
+        features: ['a', 'b', 'c']
     },
     {
         id: 'blueberry',
         name: 'Blueberry',
-        categoryId: 'fruit'
+        categoryId: 'fruit',
+        features: ['a', 'b', 'c']
     },
     {
         id: 'raspberry',
         name: 'Raspberry',
-        categoryId: 'fruit'
+        categoryId: 'fruit',
+        features: ['a', 'b', 'c']
     },
     {
         id: 'blackberry',
         name: 'Blackberry',
-        categoryId: 'fruit'
+        categoryId: 'fruit',
+        features: ['a', 'b', 'c']
     },
     {
         id: 'peach',
         name: 'Peach',
-        categoryId: 'fruit'
+        categoryId: 'fruit',
+        features: ['a', 'b', 'c']
     },
     {
         id: 'almond',
         name: 'Almond',
-        categoryId: 'nut'
+        categoryId: 'nut',
+        features: ['a', 'b', 'c']
     },
     {
         id: 'hazelnut',
         name: 'Hazelnut',
-        categoryId: 'nut'
+        categoryId: 'nut',
+        features: ['a', 'b', 'c']
     },
     {
         id: 'spinach',
         name: 'Spinach',
-        categoryId: 'green'
+        categoryId: 'green',
+        features: ['a', 'b', 'c']
     },
     {
         id: 'kale',
         name: 'Kale',
-        categoryId: 'green'
+        categoryId: 'green',
+        features: ['a', 'b', 'c']
     },
     {
         id: 'chia-seed',
         name: 'Chai seed',
-        categoryId: 'seed'
+        categoryId: 'seed',
+        features: ['a', 'b', 'c']
     },
     {
         id: 'pumpkin-seed',
         name: 'Pumpkin seed',
-        categoryId: 'seed'
+        categoryId: 'seed',
+        features: ['a', 'b', 'c']
     },
     {
         id: 'whey-protein',
         name: 'Whey protein',
-        categoryId: 'dairy'
+        categoryId: 'dairy',
+        features: ['a', 'b', 'c']
     }
 ];
