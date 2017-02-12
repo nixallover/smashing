@@ -10,6 +10,6 @@ import { BlenderService } from './blender.service';
 })
 export class AppComponent {
   private titleHover: boolean = false;
-  public title = 'Smush!';
+  public title = 'Smashing!';
   constructor(private blenderSvc: BlenderService) { }
 }
