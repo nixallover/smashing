@@ -7,7 +7,8 @@
 
   <div *ngFor="let ingredient of category.ingredients" 
     (click)="addIngredient(ingredient)"
-    class="card card-block ingredient-card">
+    class="card card-block ingredient-card"
+    [style.background-image]="'url(assets/ingredients/'+ ingredient.id +'.png)'">
     <div class="ingredient-description">
         <h4 class="ingredient-name">{{ingredient.name}}</h4>
         <ul class="ingredient-features">
