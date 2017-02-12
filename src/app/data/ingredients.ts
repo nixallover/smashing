@@ -4,76 +4,91 @@ export var INGREDIENTS: Ingredient[] = [
     {
         id: 'apple',
         name: 'Apple',
-        categoryId: 'fruit'
+        categoryId: 'fruit',
+        features: ['Dietary fiber', 'Vitamin C', 'Low calorie']
     },
     {
         id: 'banana',
         name: 'Banana',
-        categoryId: 'fruit'
+        categoryId: 'fruit',
+        features: ['Dietary fiber', 'Potassium', 'Manganese']
     },
     {
         id: 'yogurt',
         name: 'Yogurt',
-        categoryId: 'dairy'
+        categoryId: 'dairy',
+        features: ['Calcium', 'Phosphorus', 'Protein']
     },
     {
         id: 'strawberry',
         name: 'Strawberry',
-        categoryId: 'fruit'
+        categoryId: 'fruit',
+        features: ['Folate', 'Vitamin C', 'Manganese']
     },
     {
         id: 'blueberry',
         name: 'Blueberry',
-        categoryId: 'fruit'
+        categoryId: 'fruit',
+        features: ['Vitamin C', 'Vitamin K', 'Manganese']
     },
     {
         id: 'raspberry',
         name: 'Raspberry',
-        categoryId: 'fruit'
+        categoryId: 'fruit',
+        features: ['Dietary fiber', 'Vitamin C', 'Manganese']
     },
     {
         id: 'blackberry',
         name: 'Blackberry',
-        categoryId: 'fruit'
+        categoryId: 'fruit',
+        features: ['Vitamin C', 'Vitamin K', 'Manganese']
     },
     {
         id: 'peach',
         name: 'Peach',
-        categoryId: 'fruit'
+        categoryId: 'fruit',
+        features: ['Vitamin C', 'Vitamin A', 'Niacin']
     },
     {
         id: 'almond',
         name: 'Almond',
-        categoryId: 'nut'
+        categoryId: 'nut',
+        features: ['Vitamin E', 'Riboflavin', 'Magnesium']
     },
     {
         id: 'hazelnut',
         name: 'Hazelnut',
-        categoryId: 'nut'
+        categoryId: 'nut',
+        features: ['Vitamin E', 'Copper', 'Manganese']
     },
     {
         id: 'spinach',
         name: 'Spinach',
-        categoryId: 'green'
+        categoryId: 'green',
+        features: ['Vitamin A', 'Vitamin K', 'Magnesium']
     },
     {
         id: 'kale',
         name: 'Kale',
-        categoryId: 'green'
+        categoryId: 'green',
+        features: ['Vitamin A', 'Vitamin K', 'Vitamin C']
     },
     {
         id: 'chia-seed',
         name: 'Chai seed',
-        categoryId: 'seed'
+        categoryId: 'seed',
+        features: ['Dietary fiber', 'Manganese', 'Calcium']
     },
     {
         id: 'pumpkin-seed',
         name: 'Pumpkin seed',
-        categoryId: 'seed'
+        categoryId: 'seed',
+        features: ['Magnesium', 'Phosphorus', 'Vitamin K']
     },
     {
         id: 'whey-protein',
         name: 'Whey protein',
-        categoryId: 'dairy'
+        categoryId: 'dairy',
+        features: ['Protein', 'Calcium', 'Low fat']
     }
 ];

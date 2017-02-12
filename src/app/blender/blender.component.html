@@ -6,8 +6,15 @@
   <div *ngIf="shared.activeDrink.ingredients.length < 1" class="missing-content">
     You haven't chosen any ingredients yet
   </div>
-  <ul *ngFor="let activeIngredient of shared.activeDrink.ingredients">
-    <li>{{activeIngredient.name}}</li>
+  <ul *ngFor="let activeIngredient of shared.activeDrink.ingredients" class="list-unstyled">
+    <li class="active-ingredient">
+      <button type="button" (click)="blenderSvc.removeIngredient(activeIngredient)" class="btn active-ingredient-remove">
+        X
+      </button>
+      <div class="active-ingredient-title">
+        {{activeIngredient.name}} 
+      </div>
+    </li>
   </ul>
 </div>
 
