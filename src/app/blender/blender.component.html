@@ -1,15 +1,13 @@
-<h2>Blender</h2>
-
-<!--{{shared.activeDrink | json}}-->
+<h2>Here's what you've got so far:</h2>
 
 <div class="blender card card-block">
   <div *ngIf="shared.activeDrink.ingredients.length < 1" class="missing-content">
     You haven't chosen any ingredients yet
   </div>
   <ul *ngFor="let activeIngredient of shared.activeDrink.ingredients" class="list-unstyled">
-    <li class="active-ingredient">
-      <button type="button" (click)="blenderSvc.removeIngredient(activeIngredient)" class="btn active-ingredient-remove">
-        X
+    <li class="active-ingredient" [style.background-image]="'url(assets/ingredients/'+ activeIngredient.id +'.png)'">
+      <button type="button" (click)="blenderSvc.removeIngredient(activeIngredient)" class="close" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
       </button>
       <div class="active-ingredient-title">
         {{activeIngredient.name}} 

@@ -1,4 +1,4 @@
-@import '../sass/_colors';
+@import '../sass/_common-vars';
 
 .main-container {
   align-items: stretch;
@@ -11,10 +11,10 @@
   width: 45%;
   padding: 2em;
   // height: 600px;
-  // overflow-x: scroll;
 }
 .blender-container {
   width: 55%;
+  position: fixed;
   padding: 2em;
 }
 

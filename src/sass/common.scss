@@ -1,4 +1,4 @@
-@import '_colors';
+@import '_common-vars';
 
 body {
     background-color: $color-base;
@@ -18,7 +18,7 @@ h3, h4, h5, h6 {
 }
 
 .missing-content {
-    color: #109e6e;
+    color: $color-tertiary;
     margin: 4em;
     text-align: center;
     font-size: 140%;

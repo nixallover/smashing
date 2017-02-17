@@ -1,4 +1,4 @@
-@import '../../../sass/_colors';
+@import '../../../sass/_common-vars';
 
 h3.ingredient-category-header {
     font-size: 130%;
@@ -12,7 +12,7 @@ h3.ingredient-category-header {
     background: lighten($color-neutral, 10) url("assets/generic.png") no-repeat center center;
     // background-image: url("assets/ingredients/raspberry.png");
     border: none;
-    border-radius: 1em;
+    border-radius: $border-radius;
     text-align: center;
     display: inline-block;
     margin: 0px 0px 2% 2%;
@@ -40,7 +40,7 @@ h3.ingredient-category-header {
             transform: scale(0, 1);
 
             li {
-                background-color: $color-secondary;
+                background-color: $color-tertiary;
                 color: $color-white;
                 margin: 5px;
                 padding: 0px 10px;
