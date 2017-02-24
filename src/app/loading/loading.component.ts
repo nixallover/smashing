@@ -10,12 +10,6 @@ export class LoadingComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-
-  }
-
-  ngOnDestroy(): void {
-
-  }
+  ngOnInit() {}
 
 }

@@ -11,14 +11,14 @@ import { BlenderService } from './blender.service';
 export class AppComponent implements OnInit {
   private titleHover: boolean = false;
   public title = 'Smashing!';
-  private loadingCompleted: boolean;
+  // private loadingCompleted: boolean;
 
   constructor(
-  	private blenderSvc: BlenderService) { }
+    private blenderSvc: BlenderService) { }
 
   public ngOnInit(): void {
-  	this.loadingCompleted = false;
-  	setTimeout(()=> this.loadingCompleted = true, 3*1000);
-  	
+    // this.loadingCompleted = false;
+    // setTimeout(()=> this.loadingCompleted = true, 3*1000);
+    
   }
 }
