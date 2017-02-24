@@ -1,9 +1,9 @@
-@import '../../sass/_colors';
+@import '../../sass/_common-vars';
 
 .blender {
-  background-color: lighten($color-base, 10);
+  background-color: lighten(saturate($color-base, 20), 10);
   border: none;
-  border-radius: 20px;
+  border-radius: $border-radius;
   margin-bottom: 1em;
   min-height: 200px;
 }
@@ -22,22 +22,24 @@
 }
 
 .active-ingredient {
-  border-radius: 5px;
-  background-color: $color-secondary;
-  color: $color-white;
+  background: lighten($color-neutral, 10) url("assets/generic.png") no-repeat right center;
+  border-radius: $border-radius;
+  background-color: $color-white;
+  color: $color-secondary;
 
   .active-ingredient-title {
-    padding: 1em;
+    padding: 1.5rem;
   }
 
-  .active-ingredient-remove {
-    background-color: $color-secondary;
-    color: $color-white;
+  .close {
+    // background-color: $color-secondary;
+    color: $color-secondary;
     float: right;
-    padding: 1em;
+    padding: 1.5rem;
+    font-weight: bold;
 
-    &:hover {
-      background-color: darken($color-secondary, 10);
-    }
+    // &:hover {
+    //   background-color: darken($color-secondary, 10);
+    // }
   }
 }

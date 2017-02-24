@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 
 import { IngredientListComponent } from './ingredients/ingredient-list/ingredient-list.component';
 import { BlenderComponent } from './blender/blender.component';
+import { LoadingComponent } from './loading/loading.component';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { BlenderComponent } from './blender/blender.component';
   declarations: [
     AppComponent,
     BlenderComponent,
-    IngredientListComponent
+    IngredientListComponent,
+    LoadingComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
