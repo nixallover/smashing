@@ -1,0 +1,44 @@
+@import '../../sass/_common-vars';
+
+.loading-overlay {
+	background-color: darken($color-base, 10);
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+	transition: background-color .8s ease;
+
+	&.done {
+		background-color: rgba($color-secondary, 0); 
+	}
+}
+
+.loading-spinner {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	top: 150px;
+	opacity: 1;
+	transition: top .7s ease, opacity 1s;
+
+	-webkit-animation: spin 2s linear infinite;
+    -moz-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+
+    &.done {
+    	opacity: 0;
+		top: 500px;
+	}
+}
+
+@-moz-keyframes spin { 
+	100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+	100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+	100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } 
+}

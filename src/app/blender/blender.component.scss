@@ -1,7 +1,7 @@
 @import '../../sass/_common-vars';
 
 .blender {
-  background-color: lighten($color-base, 10);
+  background-color: lighten(saturate($color-base, 20), 10);
   border: none;
   border-radius: $border-radius;
   margin-bottom: 1em;

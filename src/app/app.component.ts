@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { BlenderService } from './blender.service';
 
@@ -8,8 +8,17 @@ import { BlenderService } from './blender.service';
   styleUrls: ['./app.component.scss'],
   providers: [BlenderService]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   private titleHover: boolean = false;
   public title = 'Smashing!';
-  constructor(private blenderSvc: BlenderService) { }
+  private loadingCompleted: boolean;
+
+  constructor(
+  	private blenderSvc: BlenderService) { }
+
+  public ngOnInit(): void {
+  	this.loadingCompleted = false;
+  	setTimeout(()=> this.loadingCompleted = true, 3*1000);
+  	
+  }
 }
